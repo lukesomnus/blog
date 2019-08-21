@@ -1,0 +1,97 @@
+.gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+
+  /**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+    background-color: #fdf6e3;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  
+  /**
+   * Remove the default PrismJS theme background-color, border-radius, margin,
+   * padding and overflow.
+   * 1. Make the element just wide enough to fit its content.
+   * 2. Always fill the visible space in .gatsby-highlight.
+   * 3. Adjust the position of the line numbers
+   */
+  .gatsby-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+    font-size: 0.85rem;
+  }
+
+  :not(pre) > code[class*="language-"]{
+    background-color:var(--themeColor) !important ;
+    color: #fff;
+  }
+
+  .token.comment, .token.prolog, .token.doctype, .token.cdata{
+    color:var(--themeColor) !important; 
+  }
+
+  body{
+    background-color: #fff;
+    --themeColor:#CC9999;
+  }
+  .blog-post{
+    max-width:42rem;
+    margin: 0 auto;
+    padding: 2.625rem 1.3125rem
+  }
+  .blog-post .blog-title{
+    font-size: 2rem
+  }
+  .blog-post .blog-birthtime{
+    font-size: 0.8rem;
+  }
+.blog-post-content{
+  font-size: 16px;
+}
+.blog-header{
+  height: 3.6rem;
+  background-color: var(--themeColor);
+
+
+}
+.blog-header h1{
+  color: #fff;
+  max-width:42rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  line-height: 3.6rem;
+}
+.blog-post a {
+  color:var(--themeColor);
+}
+a{
+  color: #000;
+}
+  a:visited{
+    color: #000;
+  }
+  a h3{
+    color:var(--themeColor); 
+  }
+
+  a{
+    text-decoration: none !important;
+  }
+  
